@@ -1,0 +1,106 @@
+
+--------------------------------------------
+Warning: your license will expire in 3 days
+--------------------------------------------
+
+Using license file /home/jupyter-pander14/gurobi.lic
+Academic license - for non-commercial use only - expires 2021-02-06
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 11 rows, 25 columns and 75 nonzeros
+Model fingerprint: 0xd23af3a2
+Coefficient statistics:
+  Matrix range     [4e-01, 1e+00]
+  Objective range  [5e-01, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-01, 1e+00]
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 10 rows, 25 columns, 70 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.5000000e+00   7.000000e+00   0.000000e+00      0s
+       8    4.0312500e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 8 iterations and 0.00 seconds
+Optimal objective  4.031250000e+00
+Iteration 0
+P_value
+[[0 0 0 0 1]
+ [0 0 0 1 0]
+ [0 1 0 0 0]
+ [1 0 0 0 0]
+ [0 0 1 0 0]]
+(1.0,)
+ranking
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]]
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 11 rows, 25 columns and 75 nonzeros
+Model fingerprint: 0xa057b10f
+Coefficient statistics:
+  Matrix range     [4e-01, 1e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-01, 1e+00]
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 10 rows, 25 columns, 70 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    6.5312500e+00   7.000000e+00   0.000000e+00      0s
+       8    8.0625000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 8 iterations and 0.00 seconds
+Optimal objective  8.062500000e+00
+Iteration 1
+P_value
+[[0 0 0 0 1]
+ [0 0 0 1 0]
+ [0 1 0 0 0]
+ [1 0 0 0 0]
+ [0 0 1 0 0]]
+(1.0,)
+ranking
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]]
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 11 rows, 25 columns and 75 nonzeros
+Model fingerprint: 0x650a0956
+Coefficient statistics:
+  Matrix range     [4e-01, 1e+00]
+  Objective range  [2e+00, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-01, 1e+00]
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 10 rows, 25 columns, 70 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0562500e+01   7.000000e+00   0.000000e+00      0s
+       8    1.2093750e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 8 iterations and 0.00 seconds
+Optimal objective  1.209375000e+01
+Iteration 2
+P_value
+[[0 0 0 0 1]
+ [0 0 0 1 0]
+ [0 1 0 0 0]
+ [1 0 0 0 0]
+ [0 0 1 0 0]]
+(1.0,)
+ranking
+[[0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0.]
+ [0. 1. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]]
