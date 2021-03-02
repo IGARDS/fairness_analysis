@@ -11,6 +11,7 @@ def calc_position_attentions(num_items, click_probability=0.5, position_cutoff=1
   return np.array([click_probability * (1 - click_probability) ** i if i < position_cutoff else 0 for i in range(num_items)])
 
 def sample_ranking(probabalistic_ranking):
+  import pdb; pdb.set_trace()
   decomposition = birkhoff_von_neumann_decomposition(probabalistic_ranking)
   weights, matrices = zip(*decomposition)
   print(weights)
@@ -76,6 +77,7 @@ def main():
   num_items = 5
   dcg_drop_ratio_max = 0.1
   position_attentions = calc_position_attentions(num_items)
+  print(position_attentions)
   accumulated_attention = np.zeros(num_items)
   accumulated_relevance = np.zeros(num_items)
   for ranking_num in range(num_rankings):
@@ -104,6 +106,9 @@ def main():
     AP.update()
     
     #P = cp.Variable((num_items, num_items))
+    AP.Params.Method = 3
+    #AP.Params.Crossover = 0 
+    AP.update()
     AP.setObjective(quicksum(C[i,j]*P[i,j] for i in range(num_items) for j in range(num_items)),GRB.MINIMIZE)
     
     AP.update()
@@ -118,7 +123,10 @@ def main():
     #prob = cp.Problem(objective, constraints)
     #result = prob.solve(verbose=False, solver=cp.SCS)
     AP.optimize()
-    P_value = get_sol_x_by_x(P,num_items)
+    print(C)
+    print(P)
+    P_value = get_sol_x_by_x(P,num_items,cont=True)
+    #import pdb; pdb.set_trace()
     print(f"Iteration {ranking_num}")
     print("P_value")
     print(P_value)
